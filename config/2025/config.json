@@ -351,6 +351,7 @@
           "code": "DEg",
           "defaultValue": "No",
           "choices": {
+            "No": "No",
             "Com": "Comuunication Issues",
             "Brown Out": "Brown Out",
             "Disabled": "Mechanical Disabled"
