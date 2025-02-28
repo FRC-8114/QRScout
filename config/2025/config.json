@@ -348,14 +348,14 @@
           "title": "Died?",
           "type": "select",
           "required": false,
+          "code": "DEg",
           "defaultValue": "No",
           "choices": {
             "Com": "Comuunication Issues",
             "Brown Out": "Brown Out",
-            "Disabled": "Mechanical Disabled",
-          "code": "DEg",
+            "Disabled": "Mechanical Disabled"
           }
-        },
+        }
       ]
     },
     {
@@ -374,8 +374,8 @@
             "Dc": "Deep Climb",
             "Fc": "Failed Climb"
           }
-        },
-        ]
+        }
+      ]
     },
     {
       "name": "Postmatch",
@@ -400,24 +400,25 @@
           "max": 5,
           "step": 1
         },
-        {{
+        {
           "title": "Died?",
           "type": "select",
           "required": false,
+          "code": "died",
           "defaultValue": "No",
-          "choices": [
-          { "value": "Com", "label": "Communication Issues" },
-          { "value": "Brown Out", "label": "Brown Out" },
-          { "value": "Disabled", "label": "Mechanical Disabled" }
-  ],
-  }
-
+          "choices": {
+            "Com": "Communication Issues",
+            "Brown Out": "Brown Out",
+            "Disabled": "Mechanical Disabled"
+          }
+        },
+        {
           "title": "Defended?",
           "type": "boolean",
           "required": false,
           "code": "DEFEg",
           "defaultValue": false
-        }
+        },
         {
           "title": "Yellow/Red Card",
           "type": "select",
