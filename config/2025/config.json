@@ -349,7 +349,7 @@
           "type": "select",
           "required": false,
           "defaultValue": "No",
-          "choices:: {
+          "choices": {
             "Com": "Comuunication Issues",
             "Brown Out": "Brown Out",
             "Disabled": "Mechanical Disabled"
