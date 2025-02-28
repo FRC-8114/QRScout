@@ -352,9 +352,10 @@
           "choices": {
             "Com": "Comuunication Issues",
             "Brown Out": "Brown Out",
-            "Disabled": "Mechanical Disabled"
+            "Disabled": "Mechanical Disabled",
           "code": "DEg",
           }
+        },
       ]
     },
     {
