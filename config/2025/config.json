@@ -399,7 +399,18 @@
           "max": 5,
           "step": 1
         },
-        {
+        {{
+          "title": "Died?",
+          "type": "select",
+          "required": false,
+          "defaultValue": "No",
+          "choices": [
+          { "value": "Com", "label": "Communication Issues" },
+          { "value": "Brown Out", "label": "Brown Out" },
+          { "value": "Disabled", "label": "Mechanical Disabled" }
+  ],
+  }
+
           "title": "Defended?",
           "type": "boolean",
           "required": false,
