@@ -153,7 +153,7 @@
           "defaultValue": false
         },
         {
-          "title": "Coral L1 Scored",
+          "title": "Auto L1",
           "description": "The number of level 1 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -163,7 +163,7 @@
           "step": 1
         },
         {
-          "title": "Coral L2 Scored",
+          "title": "Auto L2",
           "description": "The number of level 2 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -173,7 +173,7 @@
           "step": 1
         },
         {
-          "title": "Coral L3 Scored",
+          "title": "Auto L3",
           "description": "The number of level 3 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -183,7 +183,7 @@
           "step": 1
         },
         {
-          "title": "Coral L4 Scored",
+          "title": "Auto L4",
           "description": "The number of level 4 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -255,7 +255,7 @@
           "multiSelect": true
         },
         {
-          "title": "Coral L1 Scored",
+          title": "Tele L1",
           "description": "The number of level 1 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -265,7 +265,7 @@
           "step": 1
         },
         {
-          "title": "Coral L2 Scored",
+          "title": "Tele L2",
           "description": "The number of level 2 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -275,7 +275,7 @@
           "step": 1
         },
         {
-          "title": "Coral L3 Scored",
+          "title": "Tele L3",
           "description": "The number of level 3 coral scored during autonomous.",
           "type": "counter",
           "required": false,
@@ -285,7 +285,7 @@
           "step": 1
         },
         {
-          "title": "Coral L4 Scored",
+          "title": "Tele L4",
           "description": "The number of level 4 coral scored during autonomous.",
           "type": "counter",
           "required": false,
