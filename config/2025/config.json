@@ -255,7 +255,7 @@
           "multiSelect": true
         },
         {
-          title": "Tele L1",
+          "title": "Tele L1",
           "description": "The number of level 1 coral scored during autonomous.",
           "type": "counter",
           "required": false,
