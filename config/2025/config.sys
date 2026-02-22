@@ -1,0 +1,218 @@
+{
+  "title": "QRScout",
+  "page_title": "Rebuilt Team 8114 -- 2026",
+  "delimiter": "\t",
+  "teamNumber": 8114,
+  "sections": [
+
+    {
+      "name": "Prematch",
+      "fields": [
+        {
+          "title": "Scouter Initials",
+          "type": "text",
+          "required": true,
+          "code": "scouter",
+          "defaultValue": "",
+          "formResetBehavior": "preserve"
+        },
+        {
+          "title": "Match Number",
+          "type": "number",
+          "required": true,
+          "code": "matchNumber",
+          "defaultValue": 1,
+          "formResetBehavior": "increment"
+        },
+        {
+          "title": "Robot",
+          "type": "select",
+          "required": true,
+          "code": "robot",
+          "defaultValue": "R1",
+          "choices": {
+            "R1": "Red 1",
+            "R2": "Red 2",
+            "R3": "Red 3",
+            "B1": "Blue 1",
+            "B2": "Blue 2",
+            "B3": "Blue 3"
+          },
+          "formResetBehavior": "preserve"
+        },
+        {
+          "title": "Team Number",
+          "type": "number",
+          "required": true,
+          "code": "teamNumber",
+          "defaultValue": 0,
+          "min": 0,
+          "max": 19999
+        },
+        {
+          "title": "Starting Position",
+          "type": "select",
+          "required": true,
+          "code": "Prsp",
+          "defaultValue": "",
+          "choices": {
+            "LT": "Left Trench",
+            "LB": "Left Bump",
+            "H": "Hub",
+            "RB": "Right Bump",
+            "RT": "Right Trench"
+          }
+        },
+        {
+          "title": "No Show",
+          "type": "boolean",
+          "required": false,
+          "code": "noShow",
+          "defaultValue": false
+        }
+      ]
+    },
+
+    {
+      "name": "Autonomous",
+      "fields": [
+        { "title": "Scored Preload", "type": "boolean", "required": false, "code": "ASPre", "defaultValue": false },
+        { "title": "Depot", "type": "boolean", "required": false, "code": "ADep", "defaultValue": false },
+        { "title": "Outpost", "type": "boolean", "required": false, "code": "AOut", "defaultValue": false },
+        { "title": "Collected from Neutral Zone", "type": "boolean", "required": false, "code": "ACNZ", "defaultValue": false },
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "AHS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Human Player Scored", "type": "counter", "required": false, "code": "AHPS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Autonomous L1 Climb", "type": "boolean", "required": false, "code": "AClimb", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Transition",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "THS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Depot", "type": "boolean", "required": false, "code": "TDep", "defaultValue": false },
+        { "title": "Outpost", "type": "boolean", "required": false, "code": "TOut", "defaultValue": false },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "TPFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "TPFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "TDefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "TDefAZ", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Shift 1",
+      "fields": [
+        {
+          "title": "Alliance Advantage",
+          "type": "select",
+          "required": false,
+          "code": "S1AA",
+          "defaultValue": "",
+          "choices": { "Red": "Red", "Blue": "Blue" }
+        },
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "S1HS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "S1PFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "S1PFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "S1DefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "S1DefAZ", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Shift 2",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "S2HS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "S2PFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "S2PFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "S2DefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "S2DefAZ", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Shift 3",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "S3HS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "S3PFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "S3PFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "S3DefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "S3DefAZ", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Shift 4",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "S4HS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "S4PFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "S4PFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "S4DefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "S4DefAZ", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Endgame",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "EGHS", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Neutral Zone", "type": "counter", "required": false, "code": "EGPFNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Passes Fuel from Opposing Alliance Zone", "type": "counter", "required": false, "code": "EGPFOAZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "EGDefNZ", "defaultValue": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "EGDefAZ", "defaultValue": false },
+        {
+          "title": "Climb",
+          "type": "select",
+          "required": false,
+          "code": "EGClimb",
+          "defaultValue": "",
+          "choices": {
+            "None": "No Climb",
+            "L1": "Level 1",
+            "L2": "Level 2",
+            "L3": "Level 3",
+            "L4": "Level 4"
+          }
+        },
+        {
+          "title": "Climb Position",
+          "type": "select",
+          "required": false,
+          "code": "EGClimbPos",
+          "defaultValue": "",
+          "choices": {
+            "OL": "Outside Left",
+            "FL": "Front Left",
+            "C": "Center",
+            "FR": "Front Right",
+            "OR": "Outside Right"
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Postmatch",
+      "fields": [
+        {
+          "title": "Balls per Hopper",
+          "type": "select",
+          "required": false,
+          "code": "BPH",
+          "defaultValue": "",
+          "choices": {
+            "<10": "< 10",
+            "11-20": "11 - 20",
+            "21-30": "21 - 30",
+            "31-40": "31 - 40",
+            ">40": "> 40"
+          }
+        },
+        { "title": "Defensive Skill", "type": "range", "required": false, "code": "dr", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
+        { "title": "Died?", "type": "select", "required": false, "code": "died", "defaultValue": "", "choices": { "Com": "Communication Issues", "BrownOut": "Brown Out", "Disabled": "Mechanical Disabled" } },
+        { "title": "Yellow/Red Card", "type": "select", "required": true, "code": "yc", "defaultValue": "NoCard", "choices": { "NoCard": "No Card", "Yellow": "Yellow Card", "Red": "Red Card" } },
+        { "title": "Comments", "type": "text", "required": false, "code": "co", "defaultValue": "", "max": 50 }
+      ]
+    }
+
+  ]
+}
