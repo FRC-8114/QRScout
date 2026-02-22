@@ -1,5 +1,6 @@
 {
-  "$schema": "https://frc2713.github.io/QRScout/schema.json","title": "QRScout",
+  "$schema": "https://frc2713.github.io/QRScout/schema.json",
+  "title": "QRScout",
   "page_title": "Rebuilt Team 8114 -- 2026",
   "delimiter": "\t",
   "teamNumber": 8114,
