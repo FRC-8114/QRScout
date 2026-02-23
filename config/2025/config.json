@@ -53,7 +53,7 @@
           "code": "climbPos",
           "defaultValue": "Center",
           "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side" }
-        }   
+        } ,
         { "title": "Crossed Lanes", "type": "boolean", "required": false, "code": "autonCrossLanes", "defaultValue": false },
         { "title": "Won Auton?", "type": "boolean", "required": false, "code": "wonAuto", "defaultValue": false }
       ]
