@@ -53,7 +53,7 @@
         { "title": "Crosses Bump", "type": "counter", "code": "transCrossBump", "defaultValue": 0, "min": 0, "required": false },
         { "title": "Crosses Trench", "type": "counter", "code": "transCrossTrench", "defaultValue": 0, "min": 0, "required": false },
         { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "transDefAlliance", "defaultValue": false, "required": false },
-        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "transDefNeutral", "defaultValue": false. "required": false }
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "transDefNeutral", "defaultValue": false, "required": false }
       ]
     },
 
