@@ -32,41 +32,41 @@
     {
       "name": "Autonomous",
       "fields": [
-        { "title": "Score Preload", "type": "boolean", "code": "preload", "defaultValue": false },
-        { "title": "Depot", "type": "boolean", "code": "autonDepot", "defaultValue": false },
-        { "title": "Outpost", "type": "boolean", "code": "autonOutpost", "defaultValue": false },
-        { "title": "Collects from Neutral Zone", "type": "boolean", "code": "collectNZ", "defaultValue": false },
-        { "title": "Hoppers Scored", "type": "counter", "code": "autonHoppers", "defaultValue": 0, "min": 0 },
-        { "title": "Climb (L1)", "type": "boolean", "code": "autonClimb", "defaultValue": false },
-        { "title": "Crossed Lanes", "type": "boolean", "code": "autonCrossLanes", "defaultValue": false },
-        { "title": "Won Auton?", "type": "boolean", "code": "wonAuto", "defaultValue": false }
+        { "title": "Score Preload", "type": "boolean", "code": "preload", "defaultValue": false, "required": false },
+        { "title": "Depot", "type": "boolean", "code": "autonDepot", "defaultValue": false, "required": false },
+        { "title": "Outpost", "type": "boolean", "code": "autonOutpost", "defaultValue": false, "required": false },
+        { "title": "Collects from Neutral Zone", "type": "boolean", "code": "collectNZ", "defaultValue": false, "required": false },
+        { "title": "Hoppers Scored", "type": "counter", "code": "autonHoppers", "defaultValue": 0, "min": 0, "requred": false },
+        { "title": "Climb (L1)", "type": "boolean", "code": "autonClimb", "defaultValue": false, "required": false },
+        { "title": "Crossed Lanes", "type": "boolean", "code": "autonCrossLanes", "defaultValue": false, "required": false },
+        { "title": "Won Auton?", "type": "boolean", "code": "wonAuto", "defaultValue": false, "required": false }
       ]
     },
 
     {
       "name": "Transition",
       "fields": [
-        { "title": "Hoppers Scored", "type": "counter", "code": "transHoppers", "defaultValue": 0, "min": 0 },
-        { "title": "Depot", "type": "boolean", "code": "transDepot", "defaultValue": false },
-        { "title": "Outpost", "type": "boolean", "code": "transOutpost", "defaultValue": false },
-        { "title": "Pass from Neutral Zone", "type": "counter", "code": "transPassNZ", "defaultValue": 0, "min": 0 },
-        { "title": "Crosses Bump", "type": "counter", "code": "transCrossBump", "defaultValue": 0, "min": 0 },
-        { "title": "Crosses Trench", "type": "counter", "code": "transCrossTrench", "defaultValue": 0, "min": 0 },
-        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "transDefAlliance", "defaultValue": false },
-        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "transDefNeutral", "defaultValue": false }
+        { "title": "Hoppers Scored", "type": "counter", "code": "transHoppers", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Depot", "type": "boolean", "code": "transDepot", "defaultValue": false, "required": false },
+        { "title": "Outpost", "type": "boolean", "code": "transOutpost", "defaultValue": false, "required": false },
+        { "title": "Pass from Neutral Zone", "type": "counter", "code": "transPassNZ", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Crosses Bump", "type": "counter", "code": "transCrossBump", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Crosses Trench", "type": "counter", "code": "transCrossTrench", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "transDefAlliance", "defaultValue": false, "required": false },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "transDefNeutral", "defaultValue": false. "required": false }
       ]
     },
 
     {
       "name": "Shifts",
       "fields": [
-        { "title": "Hoppers Scored", "type": "counter", "code": "shiftHoppers", "defaultValue": 0, "min": 0 },
-        { "title": "Pass from Neutral Zone", "type": "counter", "code": "shiftPassNZ", "defaultValue": 0, "min": 0 },
-        { "title": "Crosses Bump", "type": "counter", "code": "shiftCrossBump", "defaultValue": 0, "min": 0 },
-        { "title": "Crosses Trench", "type": "counter", "code": "shiftCrossTrench", "defaultValue": 0, "min": 0 },
-        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "shiftDefAlliance", "defaultValue": false },
-        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "shiftDefNeutral", "defaultValue": false },
-        { "title": "Teleop Passing Effectiveness", "type": "range", "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5 }
+        { "title": "Hoppers Scored", "type": "counter", "code": "shiftHoppers", "defaultValue": 0, "min": 0, "required": false  },
+        { "title": "Pass from Neutral Zone", "type": "counter", "code": "shiftPassNZ", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Crosses Bump", "type": "counter", "code": "shiftCrossBump", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Crosses Trench", "type": "counter", "code": "shiftCrossTrench", "defaultValue": 0, "min": 0, "required": false },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "shiftDefAlliance", "defaultValue": false, "required": false },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "shiftDefNeutral", "defaultValue": false, "required": false },
+        { "title": "Teleop Passing Effectiveness", "type": "range", "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "required": false }
       ]
     },
 
@@ -74,7 +74,7 @@
       "name": "Endgame",
       "fields": [
         { "title": "Climb Level", "type": "select", "code": "climbLevel",
-          "choices": { "None": "None", "L1": "L1", "L2": "L2", "L3": "L3", "L4": "L4" }
+          "choices": { "None": "None", "L1": "L1", "L2": "L2", "L3": "L3" }
         },
         { "title": "Climb Position", "type": "select", "code": "climbPos",
           "choices": {
@@ -99,8 +99,8 @@
             ">50": ">50"
           }
         },
-        { "title": "Defensive Skill", "type": "range", "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5 },
-        { "title": "Defended?", "type": "boolean", "code": "defended", "defaultValue": false },
+        { "title": "Defensive Skill", "type": "range", "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5, "required": false },
+        { "title": "Defended?", "type": "boolean", "code": "defended", "defaultValue": false, "required": false },
         { "title": "Died?", "type": "select", "code": "died",
           "choices": {
             "No": "No",
@@ -109,8 +109,8 @@
             "Disabled": "Mechanical Disabled"
           }
         },
-        { "title": "Beached on Fuel", "type": "boolean", "code": "beachedFuel", "defaultValue": false },
-        { "title": "Beached on Bump", "type": "boolean", "code": "beachedBump", "defaultValue": false },
+        { "title": "Beached on Fuel", "type": "boolean", "code": "beachedFuel", "defaultValue": false, "required": false },
+        { "title": "Beached on Bump", "type": "boolean", "code": "beachedBump", "defaultValue": false, "required": false },
         { "title": "Yellow / Red Card", "type": "select", "code": "card",
           "choices": {
             "None": "No Card",
@@ -118,7 +118,7 @@
             "Red": "Red"
           }
         },
-        { "title": "Comments", "type": "text", "code": "comments", "defaultValue": "" }
+        { "title": "Comments", "type": "text", "code": "comments", "defaultValue": "", "required": false }
       ]
     }
 
