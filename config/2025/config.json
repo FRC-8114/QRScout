@@ -10,12 +10,12 @@
     {
       "name": "Prematch",
       "fields": [
-        { "title": "Scouter Initials", "type": "text", "required": true, "code": "scouter", "defaultValue": "" },
-        { "title": "Match Number", "type": "number", "required": true, "code": "matchNumber", "defaultValue": 1 },
+        { "title": "Scouter Initials", "type": "text", "required": true, "code": "scouter", "defaultValue": "", "required": false },
+        { "title": "Match Number", "type": "number", "required": true, "code": "matchNumber", "defaultValue": 1, "required": false },
         { "title": "Robot", "type": "select", "required": true, "code": "robot",
           "choices": { "R1": "Red 1", "R2": "Red 2", "R3": "Red 3", "B1": "Blue 1", "B2": "Blue 2", "B3": "Blue 3" }
         },
-        { "title": "Team Number", "type": "number", "required": true, "code": "teamNumber", "defaultValue": 0 },
+        { "title": "Team Number", "type": "number", "required": true, "code": "teamNumber", "defaultValue": 0, "required": false },
         { "title": "Starting Position", "type": "select", "required": true, "code": "startPos",
           "choices": {
             "OT": "Outpost Trench",
@@ -25,7 +25,7 @@
             "DT": "Depot Trench"
           }
         },
-        { "title": "No Show", "type": "boolean", "required": false, "code": "noShow", "defaultValue": false }
+        { "title": "No Show", "type": "boolean", "required": false, "code": "noShow", "defaultValue": false, "required": false }
       ]
     },
 
