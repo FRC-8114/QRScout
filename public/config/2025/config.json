@@ -1,1 +1,126 @@
+{
+  "$schema": "https://frc2713.github.io/QRScout/schema.json",
+  "title": "QRScout",
+  "page_title": "Rebuilt Team 8114 -- 2026",
+  "delimiter": "\t",
+  "teamNumber": 8114,
 
+  "sections": [
+
+    {
+      "name": "Prematch",
+      "fields": [
+        { "title": "Scouter Initials", "type": "text", "required": true, "code": "scouter", "defaultValue": "" },
+        { "title": "Match Number", "type": "number", "required": true, "code": "matchNumber", "defaultValue": 1 },
+        { "title": "Robot", "type": "select", "required": true, "code": "robot",
+          "choices": { "R1": "Red 1", "R2": "Red 2", "R3": "Red 3", "B1": "Blue 1", "B2": "Blue 2", "B3": "Blue 3" }
+        },
+        { "title": "Team Number", "type": "number", "required": true, "code": "teamNumber", "defaultValue": 0 },
+        { "title": "Starting Position", "type": "select", "required": true, "code": "startPos",
+          "choices": {
+            "OT": "Outpost Trench",
+            "OB": "Outpost Bump",
+            "H": "Hub",
+            "DB": "Depot Bump",
+            "DT": "Depot Trench"
+          }
+        },
+        { "title": "No Show", "type": "boolean", "required": false, "code": "noShow", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Autonomous",
+      "fields": [
+        { "title": "Score Preload", "type": "boolean", "code": "preload", "defaultValue": false },
+        { "title": "Depot", "type": "boolean", "code": "autonDepot", "defaultValue": false },
+        { "title": "Outpost", "type": "boolean", "code": "autonOutpost", "defaultValue": false },
+        { "title": "Collects from Neutral Zone", "type": "boolean", "code": "collectNZ", "defaultValue": false },
+        { "title": "Hoppers Scored", "type": "counter", "code": "autonHoppers", "defaultValue": 0, "min": 0 },
+        { "title": "Climb (L1)", "type": "boolean", "code": "autonClimb", "defaultValue": false },
+        { "title": "Crossed Lanes", "type": "boolean", "code": "autonCrossLanes", "defaultValue": false },
+        { "title": "Won Auton?", "type": "boolean", "code": "wonAuto", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Transition",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "code": "transHoppers", "defaultValue": 0, "min": 0 },
+        { "title": "Depot", "type": "boolean", "code": "transDepot", "defaultValue": false },
+        { "title": "Outpost", "type": "boolean", "code": "transOutpost", "defaultValue": false },
+        { "title": "Pass from Neutral Zone", "type": "counter", "code": "transPassNZ", "defaultValue": 0, "min": 0 },
+        { "title": "Crosses Bump", "type": "counter", "code": "transCrossBump", "defaultValue": 0, "min": 0 },
+        { "title": "Crosses Trench", "type": "counter", "code": "transCrossTrench", "defaultValue": 0, "min": 0 },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "transDefAlliance", "defaultValue": false },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "transDefNeutral", "defaultValue": false }
+      ]
+    },
+
+    {
+      "name": "Shifts",
+      "fields": [
+        { "title": "Hoppers Scored", "type": "counter", "code": "shiftHoppers", "defaultValue": 0, "min": 0 },
+        { "title": "Pass from Neutral Zone", "type": "counter", "code": "shiftPassNZ", "defaultValue": 0, "min": 0 },
+        { "title": "Crosses Bump", "type": "counter", "code": "shiftCrossBump", "defaultValue": 0, "min": 0 },
+        { "title": "Crosses Trench", "type": "counter", "code": "shiftCrossTrench", "defaultValue": 0, "min": 0 },
+        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "code": "shiftDefAlliance", "defaultValue": false },
+        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "code": "shiftDefNeutral", "defaultValue": false },
+        { "title": "Teleop Passing Effectiveness", "type": "range", "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5 }
+      ]
+    },
+
+    {
+      "name": "Endgame",
+      "fields": [
+        { "title": "Climb Level", "type": "select", "code": "climbLevel",
+          "choices": { "None": "None", "L1": "L1", "L2": "L2", "L3": "L3", "L4": "L4" }
+        },
+        { "title": "Climb Position", "type": "select", "code": "climbPos",
+          "choices": {
+            "Outpost": "Outpost Side",
+            "Center": "Center",
+            "Depot": "Depot Side"
+          }
+        }
+      ]
+    },
+
+    {
+      "name": "Postmatch",
+      "fields": [
+        { "title": "Balls per Hopper", "type": "select", "code": "ballsPerHopper",
+          "choices": {
+            "<10": "<10",
+            "11-20": "11-20",
+            "21-30": "21-30",
+            "31-40": "31-40",
+            "41-50": "41-50",
+            ">50": ">50"
+          }
+        },
+        { "title": "Defensive Skill", "type": "range", "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5 },
+        { "title": "Defended?", "type": "boolean", "code": "defended", "defaultValue": false },
+        { "title": "Died?", "type": "select", "code": "died",
+          "choices": {
+            "No": "No",
+            "Com": "Communication Issues",
+            "Brown": "Brown Out",
+            "Disabled": "Mechanical Disabled"
+          }
+        },
+        { "title": "Beached on Fuel", "type": "boolean", "code": "beachedFuel", "defaultValue": false },
+        { "title": "Beached on Bump", "type": "boolean", "code": "beachedBump", "defaultValue": false },
+        { "title": "Yellow / Red Card", "type": "select", "code": "card",
+          "choices": {
+            "None": "No Card",
+            "Yellow": "Yellow",
+            "Red": "Red"
+          }
+        },
+        { "title": "Comments", "type": "text", "code": "comments", "defaultValue": "" }
+      ]
+    }
+
+  ]
+}
