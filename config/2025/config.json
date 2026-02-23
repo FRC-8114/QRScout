@@ -39,12 +39,21 @@
     {
       "name": "Autonomous",
       "fields": [
+        { "title": "Moved", "type": "boolean", "required": false, "code": "preload", "defaultValue": false },
         { "title": "Score Preload", "type": "boolean", "required": false, "code": "preload", "defaultValue": false },
         { "title": "Depot", "type": "boolean", "required": false, "code": "autonDepot", "defaultValue": false },
         { "title": "Outpost", "type": "boolean", "required": false, "code": "autonOutpost", "defaultValue": false },
         { "title": "Collects from Neutral Zone", "type": "boolean", "required": false, "code": "collectNZ", "defaultValue": false },
         { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "autonHoppers", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Climb (L1)", "type": "boolean", "required": false, "code": "autonClimb", "defaultValue": false },
+        { "title": "Climb", "type": "boolean", "required": false, "code": "autonClimb", "defaultValue": false },
+        { 
+          "title": "Climb Position",
+          "type": "select",
+          "required": false,
+          "code": "climbPos",
+          "defaultValue": "Center",
+          "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side" }
+        }   
         { "title": "Crossed Lanes", "type": "boolean", "required": false, "code": "autonCrossLanes", "defaultValue": false },
         { "title": "Won Auton?", "type": "boolean", "required": false, "code": "wonAuto", "defaultValue": false }
       ]
@@ -69,6 +78,7 @@
         { "title": "Pass from Neutral Zone", "type": "counter", "required": false, "code": "shiftPassNZ", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Crosses Bump", "type": "counter", "required": false, "code": "shiftCrossBump", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Crosses Trench", "type": "counter", "required": false, "code": "shiftCrossTrench", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Scores while Intaking", "type": "counter", "required": false, "code": "shiftCrossTrench", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "shiftDefAlliance", "defaultValue": false },
         { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "shiftDefNeutral", "defaultValue": false },
         { "title": "Teleop Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 }
