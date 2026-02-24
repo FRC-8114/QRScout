@@ -123,11 +123,11 @@
           }
         },
         { "title": "Defensive Skill", "type": "range", "required": false, "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
-       { "title": "Scoring Accuracy", "type": "select", "required": false, "code": "accuracy",
-          "defaultValue": "M",
-          "choices": { "L": "Low", "M": "Medium", "H": "High" }
+        { "title": "Scoring Accuracy", "type": "select", "required": false, "code": "accuracy",
+            "defaultValue": "M",
+            "choices": { "L": "Low", "M": "Medium", "H": "High" }
 },
-        { "title": "Teleop Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 }
+        { "title": "Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
         { "title": "Defended?", "type": "boolean", "required": false, "code": "defended", "defaultValue": false },
         {
           "title": "Died?",
