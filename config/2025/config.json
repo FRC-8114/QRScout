@@ -52,7 +52,7 @@
           "required": false,
           "code": "climbPos",
           "defaultValue": "Center",
-          "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side" }
+          "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side", "defaultvalue": false }
         } ,
         { "title": "Crossed Lanes", "type": "boolean", "required": false, "code": "autonCrossLanes", "defaultValue": false },
         { "title": "Won Auton?", "type": "boolean", "required": false, "code": "wonAuto", "defaultValue": false }
@@ -81,8 +81,7 @@
         { "title": "Scores while Intaking", "type": "counter", "required": false, "code": "shiftCrossTrench", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "shiftDefAlliance", "defaultValue": false },
         { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "shiftDefNeutral", "defaultValue": false },
-        { "title": "Teleop Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 }
-      ]
+    ]
     },
     {
       "name": "Endgame",
@@ -124,6 +123,8 @@
           }
         },
         { "title": "Defensive Skill", "type": "range", "required": false, "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
+        { "title": "Scoring Accuracy", "type": "range", "required": false, "code" "accuracy", "defalutValue": 75, "min": 50, "max": "95" }
+        { "title": "Teleop Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 }
         { "title": "Defended?", "type": "boolean", "required": false, "code": "defended", "defaultValue": false },
         {
           "title": "Died?",
