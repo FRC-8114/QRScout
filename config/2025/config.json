@@ -123,7 +123,7 @@
           }
         },
         { "title": "Defensive Skill", "type": "range", "required": false, "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
-        { "title": "Scoring Accuracy", "type": "choices", "required": false, "code" "accuracy", "defalutValue": 50, "50": 50, "75": 75, "95", "95" }
+        { "title": "Scoring Accuracy", "type": "choices", "required": false, "code" "accuracy", "defalutValue": 50, "50": 50, "75": 75, "95": "95" }
         { "title": "Teleop Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 }
         { "title": "Defended?", "type": "boolean", "required": false, "code": "defended", "defaultValue": false },
         {
