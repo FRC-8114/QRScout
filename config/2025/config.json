@@ -59,20 +59,7 @@
       ]
     },
     {
-      "name": "Transition",
-      "fields": [
-        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "transHoppers", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Depot", "type": "boolean", "required": false, "code": "transDepot", "defaultValue": false },
-        { "title": "Outpost", "type": "boolean", "required": false, "code": "transOutpost", "defaultValue": false },
-        { "title": "Pass from Neutral Zone", "type": "counter", "required": false, "code": "transPassNZ", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Crosses Bump", "type": "boolean", "required": false, "code": "transCrossBump", "defaultValue": false },
-        { "title": "Crosses Trench", "type": "boolean", "required": false, "code": "transCrossTrench", "defaultValue": false },
-        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "transDefAlliance", "defaultValue": false },
-        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "transDefNeutral", "defaultValue": false }
-      ]
-    },
-    {
-      "name": "Shifts",
+      "name": "Teleop",
       "fields": [
         { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "shiftHoppers", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Pass from Neutral Zone", "type": "counter", "required": false, "code": "shiftPassNZ", "defaultValue": 0, "min": 0, "step": 1 },
