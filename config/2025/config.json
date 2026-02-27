@@ -64,6 +64,7 @@
         { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "TeleopHoppers", "defaultValue": 0, "min": 0, "step": 1 },
        { "title": "Scores while Intaking", "type": "counter", "required": false, "code": "ShootIntake", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Pass from Neutral Zone", "type": "counter", "required": false, "code": "shiftPassNZ", "defaultValue": 0, "min": 0, "step": 1 },
+        { "title": "Pass from Opposing Alliance", "type": "counter", "required": false, "code": "shiftPassAlliance", "defaultValue": 0, "min": 0, "step": 1 },
         { "title": "Crosses Bump", "type": "boolean", "required": false, "code": "shiftCrossBump", "defaultValue": false },
         { "title": "Crosses Trench", "type": "boolean", "required": false, "code": "shiftCrossTrench", "defaultValue": false },
         { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "shiftDefAlliance", "defaultValue": false },
