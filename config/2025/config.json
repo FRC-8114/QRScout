@@ -1,7 +1,7 @@
 {
   "$schema": "https://frc2713.github.io/QRScout/schema.json",
   "title": "QRScout",
-  "page_title": "Rebuilt Team 8114 -- 2026",
+  "page_title": "Rebuilt Team 8114 -- 2026 State",
   "delimiter": "\t",
   "teamNumber": 8114,
   "sections": [
@@ -32,116 +32,93 @@
             "DB": "Depot Bump",
             "DT": "Depot Trench"
           }
-        },
-        { "title": "No Show", "type": "boolean", "required": false, "code": "noShow", "defaultValue": false }
+        }
       ]
     },
     {
       "name": "Autonomous",
       "fields": [
-        { "title": "Moved", "type": "boolean", "required": false, "code": "moved", "defaultValue": false },
-        { "title": "Score Preload", "type": "boolean", "required": false, "code": "preload", "defaultValue": false },
-        { "title": "Depot", "type": "boolean", "required": false, "code": "autonDepot", "defaultValue": false },
-        { "title": "Outpost", "type": "boolean", "required": false, "code": "autonOutpost", "defaultValue": false },
-        { "title": "Collects from Neutral Zone", "type": "boolean", "required": false, "code": "collectNZ", "defaultValue": false },
-        { "title": "Auton Hoppers Scored", "type": "counter", "required": false, "code": "autonHoppers", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Climb", "type": "boolean", "required": false, "code": "autonClimb", "defaultValue": false },
+        { "title": "Swept Neutral Zone", "type": "boolean", "required": false, "code": "ASwNZ", "defaultValue": false },
+        { "title": "Went Over Bump", "type": "boolean", "required": false, "code": "AOverB", "defaultValue": false },
+        { "title": "Went Under Trench", "type": "boolean", "required": false, "code": "AUnderT", "defaultValue": false },
+        { "title": "Cleared Depot", "type": "boolean", "required": false, "code": "AClDep", "defaultValue": false },
         {
-          "title": "Climb Position",
+          "title": "Balls Scored",
           "type": "select",
           "required": false,
-          "code": "autonClimbPos",
-          "defaultValue": "Center",
-          "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side" }
+          "code": "ABallsSc",
+          "defaultValue": "0",
+          "choices": {
+            "0": "0",
+            "<10": "Less than 10",
+            "11-20": "11 to 20",
+            "21-30": "21 to 30",
+            ">30": "More than 30"
+          }
         },
-        { "title": "Crossed Lanes", "type": "boolean", "required": false, "code": "autonCrossLanes", "defaultValue": false },
-        { "title": "Won Auton?", "type": "boolean", "required": false, "code": "wonAuto", "defaultValue": false }
+        { "title": "Climbed", "type": "boolean", "required": false, "code": "AClimb", "defaultValue": false }
       ]
     },
     {
       "name": "Teleop",
       "fields": [
-        { "title": "Hoppers Scored", "type": "counter", "required": false, "code": "TeleopHoppers", "defaultValue": 0, "min": 0, "step": 1 },
-       { "title": "Scores while Intaking", "type": "counter", "required": false, "code": "ShootIntake", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Pass from Neutral Zone", "type": "counter", "required": false, "code": "shiftPassNZ", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Pass from Opposing Alliance", "type": "counter", "required": false, "code": "shiftPassAlliance", "defaultValue": 0, "min": 0, "step": 1 },
-        { "title": "Crosses Bump", "type": "boolean", "required": false, "code": "shiftCrossBump", "defaultValue": false },
-        { "title": "Crosses Trench", "type": "boolean", "required": false, "code": "shiftCrossTrench", "defaultValue": false },
-        { "title": "Plays Defense in Alliance Zone", "type": "boolean", "required": false, "code": "shiftDefAlliance", "defaultValue": false },
-        { "title": "Plays Defense in Neutral Zone", "type": "boolean", "required": false, "code": "shiftDefNeutral", "defaultValue": false }
+        {
+          "title": "Shooting Throughput",
+          "type": "select",
+          "required": false,
+          "code": "TShootTP",
+          "defaultValue": "M",
+          "choices": { "H": "High", "M": "Medium", "L": "Low" }
+        },
+        {
+          "title": "Neutral Zone Passing Effectiveness",
+          "type": "select",
+          "required": false,
+          "code": "TNZPass",
+          "defaultValue": "M",
+          "choices": { "H": "High", "M": "Medium", "L": "Low" }
+        },
+        {
+          "title": "Opposing Alliance Passing Effectiveness",
+          "type": "select",
+          "required": false,
+          "code": "TOAPass",
+          "defaultValue": "M",
+          "choices": { "H": "High", "M": "Medium", "L": "Low" }
+        },
+        {
+          "title": "Defense Skill",
+          "type": "select",
+          "required": false,
+          "code": "TDefSkill",
+          "defaultValue": "M",
+          "choices": { "H": "High", "M": "Medium", "L": "Low" }
+        },
+        { "title": "Fouls", "type": "boolean", "required": false, "code": "TFouls", "defaultValue": false }
       ]
     },
     {
       "name": "Endgame",
       "fields": [
+        { "title": "Climbed", "type": "boolean", "required": false, "code": "EClimb", "defaultValue": false },
         {
           "title": "Climb Level",
           "type": "select",
           "required": false,
-          "code": "climbLevel",
+          "code": "EClimbLvl",
           "defaultValue": "None",
-          "choices": { "None": "None", "L1": "L1", "L2": "L2", "L3": "L3" }
-        },
-        {
-          "title": "Climb Position",
-          "type": "select",
-          "required": false,
-          "code": "endClimbPos",
-          "defaultValue": "Center",
-          "choices": { "Outpost": "Outpost Side", "Center": "Center", "Depot": "Depot Side" }
+          "choices": { "None": "None", "L1": "Level 1", "L2": "Level 2", "L3": "Level 3" }
         }
       ]
     },
     {
       "name": "Postmatch",
       "fields": [
-        {
-          "title": "Balls per Hopper",
-          "type": "select",
-          "required": false,
-          "code": "ballsPerHopper",
-          "defaultValue": "21-30",
-          "choices": {
-            "<10": "<10",
-            "11-20": "11-20",
-            "21-30": "21-30",
-            "31-40": "31-40",
-            "41-50": "41-50",
-            ">50": ">50"
-          }
-        },
-        { "title": "Defensive Skill", "type": "range", "required": false, "code": "defSkill", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
-        {
-          "title": "Scoring Accuracy",
-          "type": "select",
-          "required": false,
-          "code": "accuracy",
-          "defaultValue": "M",
-          "choices": { "L": "Low", "M": "Medium", "H": "High" }
-        },
-        { "title": "Passing Effectiveness", "type": "range", "required": false, "code": "passEffect", "defaultValue": 3, "min": 1, "max": 5, "step": 1 },
-        { "title": "Defended?", "type": "boolean", "required": false, "code": "defended", "defaultValue": false },
-        {
-          "title": "Died?",
-          "type": "select",
-          "required": false,
-          "code": "died",
-          "defaultValue": "No",
-          "choices": { "No": "No", "Com": "Communication Issues", "Brown": "Brown Out", "Disabled": "Mechanical Disabled" }
-        },
-        { "title": "Beached on Fuel", "type": "boolean", "required": false, "code": "beachedFuel", "defaultValue": false },
-        { "title": "Beached on Bump", "type": "boolean", "required": false, "code": "beachedBump", "defaultValue": false },
-        {
-          "title": "Yellow / Red Card",
-          "type": "select",
-          "required": false,
-          "code": "card",
-          "defaultValue": "None",
-          "choices": { "None": "No Card", "Yellow": "Yellow", "Red": "Red" }
-        },
-        { "title": "Comments", "type": "text", "required": false, "code": "comments", "defaultValue": "", "min": 0, "max": 50 }
+        { "title": "Died", "type": "boolean", "required": false, "code": "PMDied", "defaultValue": false },
+        { "title": "Beached", "type": "boolean", "required": false, "code": "PMBeach", "defaultValue": false },
+        { "title": "Fouls", "type": "boolean", "required": false, "code": "PMFouls", "defaultValue": false },
+        { "title": "Comments", "type": "text", "required": false, "code": "comments", "defaultValue": "", "min": 0, "max": 100 }
       ]
     }
   ]
 }
-
