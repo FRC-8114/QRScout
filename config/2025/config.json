@@ -41,6 +41,19 @@
         { "title": "Swept Neutral Zone", "type": "boolean", "required": false, "code": "ASwNZ", "defaultValue": false },
         { "title": "Went Over Bump", "type": "boolean", "required": false, "code": "AOverB", "defaultValue": false },
         { "title": "Went Under Trench", "type": "boolean", "required": false, "code": "AUnderT", "defaultValue": false },
+        {
+          "title": "Auton Path",
+            "type": "select",
+            "required": false,
+            "code": "APath",
+            "defaultValue": "TNT",
+            "choices": {
+                "TNT": "TNT",
+                "TNB": "TNB",
+                "BNB": "BNB",
+                "BNT": "BNT"
+  }
+}
         { "title": "Cleared Depot", "type": "boolean", "required": false, "code": "AClDep", "defaultValue": false },
         {
           "title": "Balls Scored",
