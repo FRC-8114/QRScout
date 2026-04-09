@@ -38,10 +38,7 @@
     {
       "name": "Autonomous",
       "fields": [
-        { "title": "Swept Neutral Zone", "type": "boolean", "required": false, "code": "ASwNZ", "defaultValue": false },
-        { "title": "Went Over Bump", "type": "boolean", "required": false, "code": "AOverB", "defaultValue": false },
-        { "title": "Went Under Trench", "type": "boolean", "required": false, "code": "AUnderT", "defaultValue": false },
-        {
+                {
           "title": "Auton Path",
             "type": "select",
             "required": false,
@@ -51,7 +48,7 @@
                 "TNT": "TNT",
                 "TNB": "TNB",
                 "BNB": "BNB",
-                "BNT": "BNT"
+                "BNT": "BNT",
                 "AZ": "AZ",
   }
 }
