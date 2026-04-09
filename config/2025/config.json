@@ -38,20 +38,20 @@
     {
       "name": "Autonomous",
       "fields": [
-                {
+        {
           "title": "Auton Path",
-            "type": "select",
-            "required": false,
-            "code": "APath",
-            "defaultValue": "TNT",
-            "choices": {
-                "TNT": "TNT",
-                "TNB": "TNB",
-                "BNB": "BNB",
-                "BNT": "BNT",
-                "AZ": "AZ",
-  }
-}
+          "type": "select",
+          "required": false,
+          "code": "APath",
+          "defaultValue": "TNT",
+          "choices": {
+            "TNT": "TNT",
+            "TNB": "TNB",
+            "BNB": "BNB",
+            "BNT": "BNT",
+            "AZ": "AZ"
+          }
+        },
         { "title": "Cleared Depot", "type": "boolean", "required": false, "code": "AClDep", "defaultValue": false },
         {
           "title": "Balls Scored",
