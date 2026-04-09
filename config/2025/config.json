@@ -52,6 +52,7 @@
                 "TNB": "TNB",
                 "BNB": "BNB",
                 "BNT": "BNT"
+                "AZ": "AZ"
   }
 }
         { "title": "Cleared Depot", "type": "boolean", "required": false, "code": "AClDep", "defaultValue": false },
